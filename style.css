@@ -5,13 +5,10 @@ body {
   padding: 0;
 }
 
-
-
 .container {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding-bottom: 20px; /* Ajusta la cantidad de espacio adicional debajo del contenido */
 }
 
 .text {
@@ -29,13 +26,9 @@ p {
 }
 
 img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
-
-
-
-
 
 
 /* Estilos de encabezado y navegación */
