@@ -1,67 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
- <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <title>Proyecto Integrador - Untreschool</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section>
-      <h1>Bienvenido a Untreschool</h1>
-      <p>¡Aprende de forma divertida y dinámica!</p>
-      <img src="imagen1.jpg" alt="Ilustración del proyecto" />
-    </section>
+  <section id="inicio">
+    <h2>Bienvenido a mi sitio</h2>
+    <p>Contenido de la sección de inicio</p>
+  </section>
 
-    <section>
-      <h2>Acerca de nosotros</h2>
-      <p>En Untreschool nos dedicamos a ofrecer educación de calidad a través de nuestra plataforma en línea.</p>
-      <img src="imagen2.jpg" alt="Equipo de Untreschool" />
-    </section>
+  <section id="servicios">
+    <h2>Nuestros servicios</h2>
+    <ul>
+      <li>Servicio 1</li>
+      <li>Servicio 2</li>
+      <li>Servicio 3</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Nuestros servicios</h2>
-      <ul>
-        <li><img src="imagen3.jpg" alt="Icono de Servicio 1" /> Servicio 1</li>
-        <li><img src="imagen4.jpg" alt="Icono de Servicio 2" /> Servicio 2</li>
-        <li><img src="imagen5.jpg" alt="Icono de Servicio 3" /> Servicio 3</li>
-      </ul>
-    </section>
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
 
-    <section>
-      <h2>Contáctanos</h2>
-      <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
 
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>Derechos reservados &copy; 2023 Untreschool</p>
-  </footer>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 </body>
 </html>
 
