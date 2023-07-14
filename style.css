@@ -26,7 +26,7 @@ p {
 }
 
 img {
-  max-width: 40%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -35,8 +35,17 @@ header {
   background-color: #00425A;
   color: #fff;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
+nav a {
+  font-size: 15px; /* Cambia el tamaño de letra deseado aquí */
+  text-align: center;
+
+}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -45,6 +54,7 @@ nav ul {
 
 nav ul li {
   display: inline;
+  
 }
 
 nav ul li a {
@@ -112,3 +122,5 @@ footer {
   font-size: 24px;
   cursor: pointer;
 }
+
+
