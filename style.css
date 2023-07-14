@@ -1,13 +1,13 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 /* Estilos de encabezado y navegación */
 header {
-  background-color: #333;
+  background-color: #00425A;
   color: #fff;
   padding: 10px;
 }
@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color:  #EFF5F5;
   text-decoration: none;
   padding: 10px;
 }
@@ -57,7 +57,7 @@ input, textarea {
 }
 
 button {
-  background-color: #333;
+  background-color:  #1F8A70;
   color: #fff;
   padding: 10px;
   border: none;
@@ -66,7 +66,7 @@ button {
 
 /* Estilos del pie de página */
 footer {
-  background-color: #333;
+  background-color: #FC7300;
   color: #fff;
   padding: 10px;
   text-align: center;
