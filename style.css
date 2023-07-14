@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  font-family: font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -26,10 +26,9 @@ p {
 }
 
 img {
-  max-width: 29%;
+  max-width: 40%;
   height: auto;
 }
-
 
 /* Estilos de encabezado y navegación */
 header {
@@ -49,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color:  #EFF5F5;
+  color: #EFF5F5;
   text-decoration: none;
   padding: 10px;
 }
@@ -83,7 +82,7 @@ input, textarea {
 }
 
 button {
-  background-color:  #1F8A70;
+  background-color: #1F8A70;
   color: #fff;
   padding: 10px;
   border: none;
@@ -96,4 +95,20 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
+}
+
+/* Estilos de la flecha de scroll hacia arriba */
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #1F8A70;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
