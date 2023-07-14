@@ -8,6 +8,7 @@
   <title>Proyecto Integrador - UntrefSchool</title>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      var nav = document.querySelector('nav');
       var navLinks = document.querySelectorAll('nav ul li a');
       var sections = document.querySelectorAll('main section');
       var scrollToTopButton = document.querySelector('#scroll-to-top');
@@ -35,8 +36,10 @@
 
       window.addEventListener('scroll', function() {
         if (window.scrollY > 0) {
+          nav.classList.add('fixed-nav');
           scrollToTopButton.style.display = 'block';
         } else {
+          nav.classList.remove('fixed-nav');
           scrollToTopButton.style.display = 'none';
         }
       });
@@ -137,5 +140,3 @@
 </body>
 </html>
 
-
- 
