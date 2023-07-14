@@ -6,12 +6,16 @@ body {
 }
 
 .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   align-items: flex-start;
   gap: 20px;
 }
 
 .text {
+  margin-top: 20px;
   flex: 1;
 }
 
@@ -26,7 +30,7 @@ p {
 }
 
 img {
-  max-width: 42%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -38,14 +42,24 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 nav a {
-  font-size: 15px; /* Cambia el tamaño de letra deseado aquí */
+  font-size: 15px;
   text-align: center;
-
 }
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -54,7 +68,6 @@ nav ul {
 
 nav ul li {
   display: inline;
-  
 }
 
 nav ul li a {
@@ -63,44 +76,12 @@ nav ul li a {
   padding: 10px;
 }
 
-/* Estilos del contenido principal */
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-/* Estilos del formulario de contacto */
-form {
-  display: grid;
-  grid-gap: 10px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 5px;
-}
-
-button {
-  background-color: #1F8A70;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
 /* Estilos del pie de página */
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #FC7300;
   color: #fff;
   padding: 10px;
@@ -123,4 +104,7 @@ footer {
   cursor: pointer;
 }
 
-
+main {
+  margin-top: 80px; /* Ajusta el valor según sea necesario */
+  margin-left: 20px; /* Ajusta el valor según sea necesario */
+}
