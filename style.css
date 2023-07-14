@@ -107,4 +107,37 @@ footer {
 main {
   margin-top: 80px; /* Ajusta el valor según sea necesario */
   margin-left: 20px; /* Ajusta el valor según sea necesario */
+  margin-right: 20px; /* Ajusta el valor según sea necesario */
+}
+
+section:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section:nth-child(5) form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+section:nth-child(5) form label {
+  font-weight: bold;
+}
+
+section:nth-child(5) form input,
+section:nth-child(5) form textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+section:nth-child(5) form button {
+  background-color: #1F8A70;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
