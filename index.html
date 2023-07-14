@@ -10,6 +10,7 @@
     document.addEventListener("DOMContentLoaded", function() {
       var navLinks = document.querySelectorAll('nav ul li a');
       var sections = document.querySelectorAll('main section');
+      var scrollToTopButton = document.querySelector('#scroll-to-top');
 
       navLinks.forEach(function(link, index) {
         link.addEventListener("click", function(event) {
@@ -30,7 +31,22 @@
       }
 
       hideSections();
-      showSection(0);
+      showSection(0); // Mostrar la sección de "Bienvenido a UntrefSchool" por defecto
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 0) {
+          scrollToTopButton.style.display = 'block';
+        } else {
+          scrollToTopButton.style.display = 'none';
+        }
+      });
+
+      scrollToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
     });
   </script>
 </head>
@@ -41,15 +57,15 @@
         <li><a href="#">Quienes somos</a></li>
         <li><a href="#">¿Por qué elegirnos?</a></li>
         <li><a href="#">Propuesta educativa</a></li>
-        <li><a href="#">Últimas noticias
-        </a></li>
+        <li><a href="#">Últimas noticias</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-   <section>
+    
+    <section>
       <div class="container">
         <img src="https://github.com/HectorDanielAyarachiFuentes/prueba-/blob/main/Imagenes/UntrefSchool%20-%20institucional.jpg?raw=true" alt="Ilustración del proyecto" />
         <div class="text">
@@ -72,6 +88,7 @@
         </div>
       </div>
     </section>
+    
     <section>
       <h2>Acerca de nosotros</h2>
       <p>En UntrefSchool nos dedicamos a ofrecer educación de calidad a través de nuestra plataforma en línea.</p>
@@ -86,6 +103,7 @@
         <li><img src="imagen5.jpg" alt="Icono de Servicio 3" /> Servicio 3</li>
       </ul>
     </section>
+    
     <section>
       <h2>Noticias</h2>
       <ul>
@@ -115,7 +133,9 @@
   <footer>
     <p>Derechos reservados &copy; 2023 UntrefSchool</p>
   </footer>
+  <button id="scroll-to-top">↑</button>
 </body>
 </html>
+
 
  
