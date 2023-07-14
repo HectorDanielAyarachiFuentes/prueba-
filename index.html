@@ -4,9 +4,35 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <title>Proyecto Integrador - UntrefSchool</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var navLinks = document.querySelectorAll('nav ul li a');
+      var sections = document.querySelectorAll('main section');
+
+      navLinks.forEach(function(link, index) {
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          hideSections();
+          showSection(index);
+        });
+      });
+
+      function hideSections() {
+        sections.forEach(function(section) {
+          section.style.display = 'none';
+        });
+      }
+
+      function showSection(index) {
+        sections[index].style.display = 'block';
+      }
+
+      hideSections();
+      showSection(0);
+    });
+  </script>
 </head>
 <body>
   <header>
