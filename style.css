@@ -5,6 +5,12 @@ body {
   padding: 0;
 }
 
+h1 {
+  margin-left: -140px;
+  margin-top: -60px;
+  justify-content: center;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -40,24 +46,28 @@ header {
   color: #fff;
   padding: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Cambio a dirección de columna */
+  justify-content: flex-start; /* Alineación al inicio */
+  align-items: flex-start; /* Alineación al inicio */
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  bottom: 0; /* Ocupar todo el espacio vertical */
+  z-index: 999;
+  width: 80px; /* Ancho de la barra lateral */
 }
 
-nav.fixed-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+nav {
+  margin-top: 20px; /* Espacio entre el logo y las opciones de navegación */
 }
 
 nav a {
-  font-size: 15px;
+  display: block;
+  font-size: 14px;
   text-align: center;
+  padding: 10px;
+  color: #EFF5F5;
+  text-decoration: none;
 }
 
 nav ul {
@@ -67,10 +77,28 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  margin-bottom: 10px;
 }
 
-nav ul li a {
+/* Estilos de la barra de navegación miniatura para pantallas más pequeñas */
+.mini-nav {
+  display: none;
+  background-color: #00425A;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.mini-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mini-nav a {
   color: #EFF5F5;
   text-decoration: none;
   padding: 10px;
@@ -86,6 +114,7 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
+  font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
 }
 
 /* Estilos de la flecha de scroll hacia arriba */
@@ -105,15 +134,16 @@ footer {
 }
 
 main {
-  margin-top: 80px; /* Ajusta el valor según sea necesario */
-  margin-left: 20px; /* Ajusta el valor según sea necesario */
-  margin-right: 20px; /* Ajusta el valor según sea necesario */
+  margin-left: 200px; /* Ajusta el valor según sea necesario */
+  margin-top: 20px; /* Ajusta el valor según sea necesario */
+  margin-right: 30px; /* Ajusta el valor según sea necesario */
 }
 
 section:nth-child(5) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 120px; /* Espacio para la barra de navegación */
 }
 
 section:nth-child(5) form {
@@ -140,4 +170,59 @@ section:nth-child(5) form button {
   padding: 10px;
   border: none;
   cursor: pointer;
+}
+
+/* Media queries para tablet (768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /* Estilos de la barra de navegación responsive */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Media queries para dispositivos con un ancho menor o igual a 682px */
+@media (max-width: 2px) {
+  /* Ocultar la barra de navegación original */
+  nav {
+    display: none;
+  }
+
+  /* Mostrar la barra de navegación en forma de lista vertical */
+  .mini-nav {
+    display: block;
+  }
+
+  .mini-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .mini-nav a {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 40px; /* Ajusta el valor según sea necesario */
+  }
 }
