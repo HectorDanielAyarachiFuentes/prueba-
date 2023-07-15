@@ -134,7 +134,7 @@ footer {
 }
 
 main {
-  margin-left: 200px; /* Ajusta el valor según sea necesario */
+  margin-left: 100px; /* Ajusta el valor según sea necesario */
   margin-top: 20px; /* Ajusta el valor según sea necesario */
   margin-right: 30px; /* Ajusta el valor según sea necesario */
 }
@@ -225,4 +225,15 @@ section:nth-child(5) form button {
   main {
     margin-top: 40px; /* Ajusta el valor según sea necesario */
   }
+}
+.my-image1 {
+  max-width: 40%;
+  height: auto;
+  margin-left: -50px; /* Ajusta el valor según sea necesario para mover la imagen hacia la derecha */
+  margin-right: 20px; /* Ajusta el valor según sea necesario para mover la imagen hacia la izquierda */
+  transition: margin-left 0.2s ease; /* Agrega una transición suave al movimiento de la imagen */
+}
+
+.my-image1:hover {
+  margin-left: 0; /* Restablece el margen a 0 al pasar el cursor sobre la imagen */
 }
