@@ -54,8 +54,23 @@
   </script>
 </head>
 <body>
+  <div class="hamburger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+ 
   <header>
-    <nav>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Quienes somos</a></li>
+        <li><a href="#">¿Por qué elegirnos?</a></li>
+        <li><a href="#">Propuesta educativa</a></li>
+        <li><a href="#">Últimas noticias</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <nav class="mini-nav">
       <ul>
         <li><a href="#">Quienes somos</a></li>
         <li><a href="#">¿Por qué elegirnos?</a></li>
@@ -67,12 +82,11 @@
   </header>
 
   <main>
-    
     <section>
       <div class="container">
         <img src="https://github.com/HectorDanielAyarachiFuentes/prueba-/blob/main/Imagenes/UntrefSchool%20-%20institucional.jpg?raw=true" alt="Ilustración del proyecto" />
         <div class="text">
-          <h1>Bienvenido a UntrefSchool</h1>
+          <h1> Bienvenido a UntrefSchool</h1>
           <p>En UntrefSchool, nos dedicamos a brindar una educación primaria de calidad de una manera divertida y dinámica. Nuestro objetivo es que cada niño experimente el placer de aprender mientras desarrolla habilidades clave para su crecimiento y éxito.</p>
 
           <p>En nuestra escuela, creemos en el poder de la educación para transformar vidas. Nuestro equipo de profesores altamente capacitados y comprometidos está aquí para inspirar a los estudiantes y ayudarles a descubrir su potencial máximo.</p>
@@ -91,7 +105,7 @@
         </div>
       </div>
     </section>
-    
+
     <section>
       <h2>Acerca de nosotros</h2>
       <p>En UntrefSchool nos dedicamos a ofrecer educación de calidad a través de nuestra plataforma en línea.</p>
@@ -106,7 +120,7 @@
         <li><img src="imagen5.jpg" alt="Icono de Servicio 3" /> Servicio 3</li>
       </ul>
     </section>
-    
+
     <section>
       <h2>Noticias</h2>
       <ul>
@@ -137,6 +151,15 @@
     <p>Derechos reservados &copy; 2023 UntrefSchool</p>
   </footer>
   <button id="scroll-to-top">↑</button>
+
+  <script>
+    document.querySelector('#scroll-to-top').addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
 </html>
 
