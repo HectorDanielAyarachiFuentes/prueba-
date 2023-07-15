@@ -55,6 +55,7 @@ header {
   bottom: 0; /* Ocupar todo el espacio vertical */
   z-index: 999;
   width: 80px; /* Ancho de la barra lateral */
+  z-index: 10; /* Asegura que el header esté por debajo del footer */
 }
 
 nav {
@@ -115,6 +116,7 @@ footer {
   padding: 10px;
   text-align: center;
   font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
+  z-index: 20; /* Asegura que el footer esté por encima del header */
 }
 
 /* Estilos de la flecha de scroll hacia arriba */
