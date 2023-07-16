@@ -239,8 +239,30 @@ section:nth-child(5) form button {
   margin-left: -50px; /* Ajusta el valor según sea necesario para mover la imagen hacia la derecha */
   margin-right: 20px; /* Ajusta el valor según sea necesario para mover la imagen hacia la izquierda */
   transition: margin-left 0.2s ease; /* Agrega una transición suave al movimiento de la imagen */
+  margin-top: 100px; /* Ajusta el valor según sea necesario para mover la imagen hacia abajo */
 }
 
 .my-image1:hover {
   margin-left: 0; /* Restablece el margen a 0 al pasar el cursor sobre la imagen */
+}
+
+/* Ediccion de parrafos*/
+.contenido-2 {
+  margin-top: 20px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contenido-3 {
+  margin-top: 20px;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contenido-4 {
+  margin-top: 20px;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 10px;
 }
